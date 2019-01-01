@@ -9,7 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import {createStackNavigator, createAppContainer} from 'react-navigation';
-import {AddPage, ScannerPage} from './pages'
+import {AddScreen, ScannerScreen} from './screens'
 
 // const styles = StyleSheet.create({
 //   container: {
@@ -50,12 +50,12 @@ import {AddPage, ScannerPage} from './pages'
 // }
 
 const App = createStackNavigator({
-  AddPage: {screen: AddPage},
-  ScannerPage: {screen: ScannerPage},
+  AddScreen: {screen: AddScreen},
+  ScannerScreen: {screen: ScannerScreen},
   
 },
 {
-  initialRouteName: "AddPage"
+  initialRouteName: "AddScreen"
 });
 
 export default createAppContainer(App);

@@ -7,13 +7,15 @@
  */
 
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Button} from 'react-native';
 
-export default class ScannerPage extends Component {
+export default class AddScreen extends Component {
   render() {
+    const { navigation } = this.props;
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Scanner</Text>
+        <Text style={styles.welcome}>Add</Text>
+        <Button title="Go to Scanner" onPress={() => navigation.navigate('ScannerScreen')}/>
       </View>
     );
   }
